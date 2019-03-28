@@ -6,7 +6,7 @@ A python-flask based web app leveraging on google cloud and kubernetes engine. T
 
 Due to the recent increased prevelance of powerful hardware, such as modern GPUs, hashes have become increasingly easy to crack. A proactive solution to this is to use a hash that was designed to be "de-optimized". 
 
-The user access system uses [flask-hashing](https://flask-hashing.readthedocs.io/en/latest/) for hashing of user passwords in a local database using SHA256 algorithm. It can also be extended to md5, sha1, sha224, sha256, sha384, and sha512. By default, HASHING_METHOD defaults to sha256 and HASHING_ROUNDS defaults to 1. The user credentials and info are stored in a local scalable [SQLITE3](https://docs.python.org/2/library/sqlite3.html).
+The user access system uses [flask-hashing](https://flask-hashing.readthedocs.io/en/latest/) for hashing of user passwords in a local database using SHA256 algorithm. It can also be extended to md5, sha1, sha224, sha256, sha384, and sha512. By default, HASHING_METHOD defaults to sha256 and HASHING_ROUNDS defaults to 1.
 
 If you are using anything less than Python 2.7.9 you will only have the guaranteed functions provided by hashlib. Python 2.7.9 or higher allows access to OpenSSL hash functions. The name you supply to HASHING_METHOD must be valid to hashlib. To get a list of valid names, supply a random string to HASHING_METHOD and check the output when initializing your application (it raises and exception), or check hashlib.algorithms for Python 2.7.8 or less, or hashlib.algorithms_available if using Python 2.7.9+.
 
