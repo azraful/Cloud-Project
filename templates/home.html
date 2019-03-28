@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+{% if session['logged_in'] %}
+
+
+<div align = "right">
+ <a href='/logout'>Logout</a>
+</div>
+
+<p>
+<div align = "center">
+   <img src="{{ cflag }}" alt="Country Flag" height="200" width="350">
+    <br>
+    <h2>Country: "{{ cname }}"</h2>
+    <h4>Region: {{ creg }}</h4>
+    <h4>Capital: {{ ccap }}</h4>
+    <h4>Population: {{ cpop }}</h4>
+    <h4>Calling Code: {{ ccode }}</h4>
+    <h4>Timezone(s): {{ ctime }}</h4>
+    <h4>Position coordinates: {{ lat }}, {{ long }}</h4>
+    <br>
+</div>
+
+<div align = "right">
+    <a href="{{ url_for('home') }}"><i class="material-icons right"></i> <button style="height:50px;width:120px" type="button">Show me more!</button> </a>
+</div>
+</p>
+
+{% else %}
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,10 @@
+pip
+Flask
+Flask-Login==0.3.2
+Flask-WTF==0.12
+Jinja2==2.10
+WTForms==2.1
+Flask-hashing
+cassandra-driver
+flask-restful
+requests
