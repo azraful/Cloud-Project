@@ -2,7 +2,7 @@
 
 ## About
 
-A python-flask based web app leveraging on google cloud and kubernetes engine. The app is implements user based policies and hence requires users to sign up before using the same. It randomly chooses a country and queries the cassandra database set up in the Google Cloud using the 3 letter unique country code to collect the position coordinates (latitude, longitude) of the country and displays it dynamically. It also compliments the functionality by using an external api (https://restcountries.eu/rest/v2/name/{name}) to show the images of flags of the country, along with other information. 
+A python-flask based web app leveraging on google cloud and kubernetes engine. The app is implements user based policies and hence requires users to sign up before using the same. It randomly chooses a country and queries the cassandra database set up in the Google Cloud using the 3 letter unique country code to collect the position coordinates (latitude, longitude) of the country and displays it dynamically. It also compliments the functionality by using an external api (https://restcountries.eu/rest/v2/name) to show the images of flags of the country, along with other information. 
 
 Due to the recent increased prevelance of powerful hardware, such as modern GPUs, hashes have become increasingly easy to crack. A proactive solution to this is to use a hash that was designed to be "de-optimized". 
 
