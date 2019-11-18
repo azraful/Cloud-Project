@@ -59,7 +59,9 @@ It will return JSON in the form
 }
 
 
-## Docker image is available and you can run using the following command on gcloud:
+## Command
+
+Docker image is available and you can run using the following command on GCP:
 
 ```docker
 kubectl run country --image=gcr.io/pivotal-trail-229309/countries --port 8080
