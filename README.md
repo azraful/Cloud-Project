@@ -1,4 +1,4 @@
-## RANDOM COUNTRY INFO
+## Random Country Info
 
 ## About
 
